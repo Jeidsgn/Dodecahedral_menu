@@ -1,0 +1,74 @@
+﻿body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+    cursor: url('img/360_cursor.png'), auto; /* Cursor por defecto */
+}
+/* Título superior centrado */
+#titleContainer {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: none; /* Evitar que interfiera con las interacciones de la página */
+    text-align: center;
+}
+
+#pageTitle {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+#container {
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.button {
+    width: 150px;
+    height: 150px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #4682B4;
+    position: absolute;
+    pointer-events: auto;
+}
+
+.button:hover {
+        cursor: url('img/clic.png'), auto; /* Cursor al pasar sobre el botón */
+    }
+
+/* Ícono en la parte inferior derecha */
+#mobileIcon {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+/* Mostrar el ícono solo en dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    #mobileIcon {
+        display: block;
+    }
+    #titleContainer {
+        top: 80px;
+    }
+    #pageTitle {
+        width: 200px; /* Ajustar el tamaño para dispositivos móviles si es necesario */
+    }
+}
