@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
 import { CSS3DRenderer, CSS3DObject } from 'three/addons/renderers/CSS3DRenderer.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
@@ -115,19 +115,19 @@ function init() {
     controls.maxPolarAngle = Math.PI * 1;
     controls.minPolarAngle = Math.PI * -0.5;
 
-    // Configuración de Raycaster
+    // ConfiguraciÃ³n de Raycaster
     raycaster = new THREE.Raycaster();
     mouse = new THREE.Vector2();
 
     // Eventos de mouse
     window.addEventListener('mousemove', onMouseMove, false);
 
-    // Ajustar la posición de la cámara
+    // Ajustar la posiciÃ³n de la cÃ¡mara
     updateCameraPosition();
 
     window.addEventListener('resize', () => {
         onWindowResize();
-        updateCameraPosition(); // Actualizar la posición de la cámara en el redimensionamiento
+        updateCameraPosition(); // Actualizar la posiciÃ³n de la cÃ¡mara en el redimensionamiento
     });
 }
 
@@ -136,17 +136,17 @@ function onMouseMove(event) {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
 
-    // Actualiza el raycaster con la posición del mouse
+    // Actualiza el raycaster con la posiciÃ³n del mouse
     raycaster.setFromCamera(mouse, camera);
 
     // Calcula los objetos intersectados
     const intersects = raycaster.intersectObjects(dodecahedronGroup.children);
 
     if (intersects.length > 0) {
-        // Si el cursor está sobre un objeto 3D, cambia el cursor
+        // Si el cursor estÃ¡ sobre un objeto 3D, cambia el cursor
         document.body.style.cursor = `url('${cursorPointer}'), auto`;
     } else {
-        // Si el cursor no está sobre un objeto 3D, usa el cursor por defecto
+        // Si el cursor no estÃ¡ sobre un objeto 3D, usa el cursor por defecto
         document.body.style.cursor = `url('${cursorDefault}'), auto`;
     }
 }
@@ -158,8 +158,8 @@ function onWindowResize() {
 }
 
 function updateCameraPosition() {
-    // Ajusta la posición de la cámara en función del tamaño de la pantalla
-    if (window.innerWidth <= 768) { // Asumir que 768px o menos es móvil
+    // Ajusta la posiciÃ³n de la cÃ¡mara en funciÃ³n del tamaÃ±o de la pantalla
+    if (window.innerWidth <= 768) { // Asumir que 768px o menos es mÃ³vil
         camera.position.z = 500;
     } else {
         camera.position.z = 300;
