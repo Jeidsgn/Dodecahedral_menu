@@ -160,7 +160,7 @@ function onWindowResize() {
 function updateCameraPosition() {
     // Ajusta la posición de la cámara en función del tamaño de la pantalla
     if (window.innerWidth <= 768) { // Asumir que 768px o menos es móvil
-        camera.position.z = 500;
+        camera.position.z = 450;
     } else {
         camera.position.z = 300;
     }
