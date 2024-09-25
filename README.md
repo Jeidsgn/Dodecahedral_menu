@@ -20,7 +20,7 @@ const pentagonCenters = [
     new THREE.Vector3(1.618, -1, 0).multiplyScalar(radius),
     new THREE.Vector3(-1.618, -1, 0).multiplyScalar(radius)
 ];
-
+```
 
 ### Geometric Inspiration
 
