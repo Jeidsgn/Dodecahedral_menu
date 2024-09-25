@@ -5,6 +5,13 @@ This project is an interactive web page that serves as a bridge to different fac
 ## Project Description
 
 The **Dodecahedral Menu** offers a unique experience by allowing users to explore my various projects through buttons arranged in the structure of a dodecahedron. Each button leads to a link that represents a part of my work, from graphic design to programming, providing intuitive access to my creative contributions.
+
+### Geometric Inspiration
+
+The choice of the dodecahedron is not casual. Plato considered this figure a symbol of the divine, and its mystical structure translates into the complexity and depth of creativity.
+
+In this case I had to calculate the location of each vertex of a dodecahedron of radius 1 in a 3d space, and continuously there is the number phi, it is only beautiful...
+
 ```javascript
 const pentagonCenters = [
     new THREE.Vector3(0, -1.618, 1).multiplyScalar(radius),
@@ -21,10 +28,6 @@ const pentagonCenters = [
     new THREE.Vector3(-1.618, -1, 0).multiplyScalar(radius)
 ];
 ```
-
-### Geometric Inspiration
-
-The choice of the dodecahedron is not casual. Plato considered this figure a symbol of the divine, and its mystical structure translates into the complexity and depth of creativity. While calculating the position of each vertex of the dodecahedron, I discovered that the values relate to **phi**, the golden ratio—a principle that has guided artists and mathematicians throughout history in their pursuit of aesthetic perfection.
 
 ## Technologies Used
 
