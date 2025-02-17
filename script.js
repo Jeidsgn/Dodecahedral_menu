@@ -53,7 +53,7 @@ function createDodecahedron() {
         { name: 'Illustration', url: 'https://jeidsgn.tumblr.com/tagged/Ilustraciondigital' },
         { name: 'UX/UI', url: 'https://jeidsgn.tumblr.com/tagged/interface' },
         { name: 'Concept Art', url: 'https://www.instagram.com/p/C4GobA_v1RI/' },
-        { name: 'Animation', url: 'https://www.instagram.com/reel/DBRwT_pPqph/' },
+        { name: 'Animation', url: 'https://www.instagram.com/reel/DBRwT_pPqph/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
         { name: 'Branding', url: 'https://jeidsgn.tumblr.com/tagged/corporativo' },
         { name: 'Editorial Design', url: 'https://jeidsgn.tumblr.com/tagged/editorial' },
         { name: 'Programming', url: 'https://github.com/Jeidsgn' },
