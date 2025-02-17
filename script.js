@@ -50,15 +50,15 @@ function createDodecahedron() {
     const buttonData = [
         { name: 'About Me', url: 'https://linktr.ee/jeidsgn' },
         { name: 'Textil Design', url: 'https://jeidsgn.tumblr.com/tagged/textil' },
-        { name: 'Illustration', url: 'https://jeidsgn.tumblr.com/tagged/Ilustraciondigitaln' },
+        { name: 'Illustration', url: 'https://jeidsgn.tumblr.com/tagged/Ilustraciondigital' },
         { name: 'UX/UI', url: 'https://jeidsgn.tumblr.com/tagged/interface' },
-        { name: 'Concept Art', url: 'https://linktr.ee/jeidsgn' },
-        { name: 'Animation', url: 'https://www.instagram.com/' },
+        { name: 'Concept Art', url: 'https://www.instagram.com/p/C4GobA_v1RI/' },
+        { name: 'Animation', url: 'https://www.instagram.com/reel/DBRwT_pPqph/' },
         { name: 'Branding', url: 'https://jeidsgn.tumblr.com/tagged/corporativo' },
         { name: 'Editorial Design', url: 'https://jeidsgn.tumblr.com/tagged/editorial' },
         { name: 'Programming', url: 'https://github.com/Jeidsgn' },
-        { name: 'Math', url: 'https://www.youtube.com/@JeiDsgn' },
-        { name: 'Digital Adaptation', url: 'https://linktr.ee/jeidsgn' },
+        { name: 'Math', url: 'https://jeidsgn.notion.site/MathWay-Introducci-n-al-Pensamiento-Computacional-L-gico-Matem-tico-f9f161a8137f490fbd1beacaff768166?pvs=4' },
+        { name: 'Digital Adaptation', url: 'https://jeidsgn.notion.site/Adaptaci-n-tecnol-gica-18316397776c45abbeef0ba967cdc141?pvs=4' },
         { name: 'Visual Content Pack', url: 'https://jeidsgn.github.io/Boost-Visual-Content-Pack/' }
     ];
 
